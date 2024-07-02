@@ -1,0 +1,14 @@
+{%extends "layout.html"%}
+{%block content%}
+
+<link rel="stylesheet" href={{cdn_css | safe}} type="text/css">
+<script type="text/javascript" src={{cdn_js | safe}}></script>
+
+<div class="about">
+    <h1>My plot page</h1>
+    <p>The following plot shows the highs and lows of the stocks of Apple Inc. from 2015-11-01 to 2016-03-10</p>
+</div>
+
+{{script1 | safe}}
+{{div1 | safe}}
+{%endblock%}
